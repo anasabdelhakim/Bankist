@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="D:\dev anas\complete-javascript-course-master\11-Arrays-Bankist\final\icon.png"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="D:\dev anas\CodeWare\projectBankist\css\stylee.css"
+    />
+    <link
+      rel="stylesheet"
+      href="D:\dev anas\CodeWare\projectBankist\webfonts"
+    />
+    <link
+      rel="stylesheet"
+      href="D:\dev anas\CodeWare\projectBankist\css\all.min.css"
+    />
+    <title>Bankist</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1 class="login-text">Log in to get started</h1>
+        <img
+          src="D:\dev anas\CodeWare\projectBankist\logo.png"
+          alt=""
+          class="logo"
+        />
+        <div class="login">
+          <form action="">
+            <input
+              maxlength="3"
+              type="text"
+              class="input-login input-login-username"
+              placeholder="user"
+            />
+            <input
+              maxlength="4"
+              type="password"
+              class="input-login input-login-password"
+              placeholder="PIN"
+            />
+            <button class="btn--login">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="internal_app">
+        <div class="internal-fees">
+          <div class="balance">
+            <h2>Current balance</h2>
+            <p class="date-balance">As of 05/03/2037</p>
+          </div>
+          <h2 class="moeny-balance">3840 <span>€</span></h2>
+        </div>
+
+        <div class="internal-movments">
+          <div class="functional-app">
+            <div class="all">
+              <div class="movments">
+                <div class="Current-movments">
+                  <p class="movments-DEPOSIT">1 DEPOSIT</p>
+                  <p class="dateof-movment">24/01/2037</p>
+                </div>
+
+                <h3 class="text_money">3000 <span>€</span></h3>
+              </div>
+              <div class="movments">
+                <div class="Current-movments">
+                  <p class="movments-WITHDRAWAL">3 WITHDRAWAL</p>
+                  <p class="dateof-movment">3 DAYS AGO</p>
+                </div>
+
+                <h3 class="text_money">200 <span>€</span></h3>
+              </div>
+            </div>
+          </div>
+          <div class="user-transfer">
+            <div class="transfer Transfer-money">
+              <h2>Transfer money</h2>
+              <form action="">
+                <input
+                  type="text"
+                  maxlength="3"
+                  class="inp input-Transfer-to"
+                />
+
+                <input type="number" class="inp input-Amount-transfered" />
+
+                <button class="btns btn-transfer">&rarr;</button>
+
+                <label for="" class="labol">Transfer to</label>
+                <label for="" class="labol">Amount</label>
+              </form>
+            </div>
+            <div class="transfer Request-loan">
+              <h2>Request loan</h2>
+              <form action="">
+                <input type="number" step="10" class="inp request-loan" />
+                <button class="btns btn-loan">&rarr;</button>
+                <label for="" class="labol">Amount</label>
+              </form>
+            </div>
+            <div class="transfer Close-account">
+              <h2>Close account</h2>
+              <form action="">
+                <input type="text" maxlength="3" class="inp Confirm-user" />
+
+                <input type="text" maxlength="4" class="inp Confirm-PIN" />
+
+                <button class="btns btn-close-account">&rarr;</button>
+
+                <label for="" class="labol">Confirm user</label>
+                <label for="" class="labol">Confirm PIN</label>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="internal-money">
+          <div class="collect_label">
+            <div>
+              <p class="summary__label">In</p>
+              <h3 class="summary__value summary__value--in">0000€</h3>
+            </div>
+            <div>
+              <p class="summary__label">Out</p>
+              <h3 class="summary__value summary__value--out">0000€</h3>
+            </div>
+            <div>
+              <p class="summary__label">Interest</p>
+              <h3 class="summary__value summary__value--interest">0000€</h3>
+            </div>
+          </div>
+          <button class="btn--sort">
+            <i class="fa-solid fa-arrow-down-long"></i> SORT
+          </button>
+          <p class="time">You will be logged out <span>05:00</span></p>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
